@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Booleans</title>
+    <body>
+      <script>
+        console.log(5 < 3);     //false
+        console.log(8+4 === 5+7);  // true
+        console.log(5 == '5.00'); // true
+        console.log(5 === '5.00'); //false
+
+        /* 
+        == -> changes either of the data type to compare
+        === -> does not change the data type to compare 
+        Also applies to != and !==
+        */
+
+        if(true){
+          console.log('Condition is true');    //does display
+        }
+
+        if(false){
+          console.log('Condition is false');    //doesn't display
+        }
+
+        /* 
+        If the condition in the statment is true
+        then the respective code executes
+        */
+
+        if(false){
+          console.log('Condition is true');
+        }else{
+          console.log('Condition is false');
+        }
+
+        /*
+        when the condition is true, if code runs
+        when the condition is false, else code runs
+        */
+
+        /* Logical Operators */
+
+        console.log(true && true);
+        console.log(true && false);
+
+        console.log(true || true);
+        console.log(true || false);
+
+        console.log(!true);
+
+        /* Order of Operations 
+
+        1. Brackets
+        2. Addition and Subtration
+        3. Multiplication and Division
+        4. Comparion operators
+        5. Logical Operators
+
+        */
+
+
+        /* Ternary Operator */
+
+        console.log(false ? 'truthy' : 'falsy')
+
+        /* Gaurd Operator && - stops the circuit 
+        if the first conditon is false */
+
+        console.log(false && 'hello');
+
+        /* Default Operator || - stops the circuit
+        if the first condition is true */
+
+        console.log(true || 'hello');
+    
+
+
+      </script>
+    </body>
+  </head>
+</html>

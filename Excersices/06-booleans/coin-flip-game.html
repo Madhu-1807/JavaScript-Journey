@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coin Game</title>
+  </head>
+  <body>
+
+  </body>
+  <script>
+    
+    let guess = 'Heads';
+    let randomNumber = Math.random();
+    let result = randomNumber < 0.5 ? 'Heads' : 'Tails';
+    console.log(result);
+
+    let status = guess === result ? 'You Win' : 'You Lose';
+    console.log(status);
+
+    /*
+    if(randomNumber < 0.5){
+      result = 'Heads';
+    }else{
+      result = 'Tails';
+    }
+
+    if(guess === result){
+      console.log('You Win');
+    }else{
+      console.log('You Lose');
+    }*/
+
+  </script>
+</html>
